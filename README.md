@@ -14,15 +14,15 @@ surnameinitials_exer1_section e.g. (TANKLM_exer1_wx1).
 # Documentation
 - You must add screenshots of your work.
     - No hobbies selected
-        ![First page, none selected](img/none_selected_1)
-        ![Second page, none selected](img/none_selected_2)
+        ![First page, none selected](img/none_selected_1.png)
+        ![Second page, none selected](img/none_selected_2.png)
     - Some hobbies selected
-        ![First page, some selected](img/some_selected_1)
-        ![Second page, some selected](img/some_selected_2)
+        ![First page, some selected](img/some_selected_1.png)
+        ![Second page, some selected](img/some_selected_2.png)
     - All hobbies selected
-        ![First page, all selected](img/all_selected_1)
-        ![Second page, all selected](img/all_selected_2)
-        ![Third page, all selected](img/all_selected_3)
+        ![First page, all selected](img/all_selected_1.png)
+        ![Second page, all selected](img/all_selected_2.png)
+        ![Third page, all selected](img/all_selected_3.png)
 
 - What did you add to the code.
     - 
