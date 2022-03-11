@@ -14,8 +14,8 @@ surnameinitials_exer1_section e.g. (TANKLM_exer1_wx1).
 # Documentation
 - You must add screenshots of your work.
     - No hobbies selected
-        ![First page, none selected](img/none_selected_1.png)
-        ![Second page, none selected](img/none_selected_2.png)
+        ![First page, none selected](img/none_selected_1.png) ![Second page, none selected](img/none_selected_2.png)
+      
     - Some hobbies selected
         ![First page, some selected](img/some_selected_1.png)
         ![Second page, some selected](img/some_selected_2.png)
