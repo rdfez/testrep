@@ -1,48 +1,50 @@
-# Exercise 01 Your Profile App
+# Exercise 02 Food Bear App
 ### Roy Allen D. Fernandez
 ### 2020-00340
-### CMSC 23 WX-3L
+### WX-3L
 
-# Exercise Description
-> For your exercise 1 you need to create an app named your profile app. At the start of the app, you need to select your hobbies. You are required to list at least 10 of your hobbies. Then when I click the navigation button (upper right button/icon). It will be redirected to a page. The page contacts My Profile as the header. Then it shows your name, student number, and a minimum 5 sentence description of yourself. Then all the hobbies you selected on the 1st page. The theme of your app should show your favorite colors. 
+## Exercise Description
+For your 2nd exercise, you are to create a one-page mobile application that will simulate some aspects of a delivery application. This template will help you get started with your application. You can utilize the Material Components to improve the design of your output. Things you should fill out are tagged as **"TODO"**, while the tips and concepts are tagged as **"NOTE"**.
 
-# Naming your App
-```
-surnameinitials_exer1_section e.g. (TANKLM_exer1_wx1).
-```
+## Sample Output
+- Default options
+# <img src="img/default_1.png" width="300"> <img src="img/default_2.png" width="300">
+- New options (before and after confirmation)
+# <img src="img/new_1.png" width="300"> <img src="img/new_2.png" width="300"> <img src="img/new_3.png" width="300">
 
-# Documentation
-- You must add screenshots of your work.
-    - No hobbies selected
-        ![First page, none selected](img/none_selected_1.png) ![Second page, none selected](img/none_selected_2.png)
-      
-    - Some hobbies selected
-        ![First page, some selected](img/some_selected_1.png)
-        ![Second page, some selected](img/some_selected_2.png)
-    - All hobbies selected
-        ![First page, all selected](img/all_selected_1.png)
-        ![Second page, all selected](img/all_selected_2.png)
-        ![Third page, all selected](img/all_selected_3.png)
+## Documentation
+- What was added to the code.
+    - Various widgets were added to the required sections:
+        1. Title Section: 
+            - Text Widgets for title and description
+            - Favorite Widget imported from favorite.dart
+        2. Size Section:
+            - Dropdown Button for choosing among the three sizes
+        3. Payment Section:
+            - Radio Button for choosing among the payment options
+        4. Order Section:
+            - Code for resetting the sections to their default values
+            - Additional code for order confirmation
+    - Remaining values to be displayed upon order confirmation and list of widgets for the selected toppings
+    - Minor adjustments for the display
 
-- What did you add to the code.
-    - 
-
-- How are you able to do the exercise.
-    - 
+- How one was able to do the exercise.
+    - Consulting Flutter's API Documentation for specific widgets (Dropdown Button, Radio Button) and relevant discussions.
 
 - Challenges met while doing the exercise.
-    - Many unfamiliar terms and concepts
-    - Initiall overwhelmed by the amount of content, confused by code and syntax
+    - Implementing the Radio Button especially the issue of how choosing a new value only inverses the options
 
-- Happy paths and Unhappy paths encountered.
-    - Happy Paths: 
-        - (Final build)
-            1. No hobby selected => Empty list of hobbies
-            2. All hobbies selected => Full list of hobbies
-            3. 1-9 hobbies selected => 1-9 list of hobbies
+- Testing
+    - Happy Paths encountered
+        1. Click confirm button => Order section appears and display order information
+        2. Click clear button => Order section disappears and options are reset to default
+        3. Choose new options => Order information in the Order section is not updated until the confirm button is clicked
+    - Unhappy Paths encountered
+        1. Choose new payment method => Previous option set to false and the rest of the options are set to true
+        2. Click confirm button => Appends a list of selected toppings, retaining previous list
+        3. Click confirm button once => Change selected option from each section => Size and payment method details of the Order Section update in real-time but selected toppings are retained until the next confirmation
 
-    - Unhappy Paths:
-        - (Build before commit 904ada9)
-            1. Pressing the navigation button => App crash (Flutter Error)
-
-:smile_cat: contact your lab instructor if you have any concerns, inquiries or problems in your exercise.
+References:
+- https://api.flutter.dev/flutter/material/Radio-class.html
+- https://api.flutter.dev/flutter/material/DropdownButton-class.html
+- https://stackoverflow.com/q/52052241
