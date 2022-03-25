@@ -9,8 +9,10 @@ For your 2nd exercise, you are to create a one-page mobile application that will
 ## Sample Output
 - Default options
 # <img src="img/default_1.png" width="300"> <img src="img/default_2.png" width="300">
-- New options (before and after confirmation)
-# <img src="img/new_1.png" width="300"> <img src="img/new_2.png" width="300"> <img src="img/new_3.png" width="300">
+- New options before confirmation
+# <img src="img/new_1.png" width="300"> <img src="img/new_2.png" width="300"> 
+- New options after confirmation
+# <img src="img/new_3.png" width="300">
 
 ## Documentation
 - What was added to the code.
